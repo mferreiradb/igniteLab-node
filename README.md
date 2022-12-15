@@ -157,3 +157,24 @@
     - @@index() define um indice de referencia para a tabela
 
         - Parecido com FK
+
+*Validação de dados*
+
+- Necessária a configuração para que o neste realize as validações em main.ys
+
+        app.useGlobalPipes(new ValidationPipe());
+
+- Cria-se uma nova classe
+
+- Usa-se dois pacotes para realizar a validação
+
+                import { ValidationPipe } from '@nestjs/common';                
+                npm i class-validator class-transformer
+
+- Atribui-se a classe validadora aos dados recebidos na API
+    
+    - Para verificar se um dado está vazio, utiliza-se o decorator @IsNotEmpty() do pacote 'class-validator'
+
+    - Para verificar se um dado é um UUID, utiliza-se o decorator @IsUUID() do pacote 'class-validator'
+    
+    - Para validar o tamanho um dado é, utiliza-se o decorator @Length() do pacote 'class-validator'. Este decorator possui dois parametor, o primeiro é o tamanho minimo e o segundo é o tamanho máximo
