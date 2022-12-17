@@ -156,11 +156,11 @@
 
 - CRIAÇÃO DAS TABELAS        
 
-    - npx prisma migrate dev
+      - npx prisma migrate dev
 
 - ABRE NO NAVEGADOR UMA INTERFACE PARA VISUALIZAÇÃO DO BANCO DE DADOS
     
-    - npx prisma studio
+      - npx prisma studio
 
 *Validação de dados*
 
