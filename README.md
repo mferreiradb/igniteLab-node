@@ -10,10 +10,6 @@
 
                 npx prisma init --datasource-provider SQLite // INSTALAÇÃO DO SQLITE PARA PRISMA
 
-                npx prisma migrate dev // CRIAÇÃO DAS TABELAS
-
-                npx prisma studio // ABRE NO NAVEGADOR UMA INTERFACE PARA VISUALIZAÇÃO DO BANCO DE DADOS
-
 - NestJS
 
                 $ npm i -g @nestjs/cli
@@ -157,6 +153,14 @@
     - @@index() define um indice de referencia para a tabela
 
         - Parecido com FK
+
+- CRIAÇÃO DAS TABELAS        
+
+    - npx prisma migrate dev
+
+- ABRE NO NAVEGADOR UMA INTERFACE PARA VISUALIZAÇÃO DO BANCO DE DADOS
+    
+    - npx prisma studio
 
 *Validação de dados*
 
